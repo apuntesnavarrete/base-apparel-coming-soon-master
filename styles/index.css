@@ -68,7 +68,12 @@ body{
     border-radius: 40px;
     width: 100%;
     height: 60px;
-    border: 0.5px solid var(--Desaturated-Red);
+    outline: solid var(--Desaturated-Red);
+        transition: all 2s;
+        border: none;
+    }
+    .main_input:focus-visible{
+        outline: solid var(--Soft-Red);
 
     }
     .main_input::placeholder {
@@ -77,17 +82,38 @@ body{
       }
 
       .main_button{
+          cursor: pointer;
           position: relative;
           right: 80px;
           width: 125px;
-          height: 65px;
-          top:-1px;
+          height: 72px;
+          top:-5px;
           border: 0px ;
           border-radius: 30px;
           background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
           color: white;
          font-size: 2.5rem;
          box-shadow: 0 10px 15px rgba(206, 151, 151, 0.2);
+
+        }
+        .main_button:hover{
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 56%, 89%));
+
+        }
+        .icono{
+            display: none;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 16PX;
+            right: 220PX;
+            
+        }
+
+        .main_for_caption{
+            display: none;
+            color: var(--Soft-Red);
+            margin-left: 20px;
         }
   @media (max-width: 800px) {
     

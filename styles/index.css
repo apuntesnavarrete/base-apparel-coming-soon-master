@@ -120,11 +120,11 @@ body{
     
     .main{
         grid-template-columns: 1fr;
-        grid-template-rows: 120px 600px auto;
+        grid-template-rows: 120px 400px auto;
 
     }
     .main_logo{
-        padding: 25px 0 0 25px;
+        padding: 40px 0 0 25px;
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -134,14 +134,17 @@ body{
         grid-row: 2/3;
     }
     .main_content{
-        margin-top: 100px;
-
+        margin-top: 50px;
+        padding: 0;
         grid-column: 1/2;
         grid-row: 3/4;
     }
     .main_title{
         text-align: center;
 
+    }
+    .main_description{
+        text-align: center;
     }
     
   }

@@ -34,7 +34,7 @@ body{
     grid-row: 2 / 3 ;
   }
   .main_img {
-    background-image: url(images/hero-desktop.jpg);
+    background-image: url(../images/hero-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -124,11 +124,12 @@ body{
 
     }
     .main_logo{
+        padding: 25px 0 0 25px;
         grid-column: 1/2;
         grid-row: 1/2;
     }
     .main_img{
-        background-image: url(images/hero-mobile.jpg);
+        background-image: url(../images/hero-mobile.jpg);
         grid-column: 1/2;
         grid-row: 2/3;
     }
